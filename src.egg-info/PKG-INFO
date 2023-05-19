@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: src
+Version: 0.0.1
+Summary: A small package for dvc dl pipeline demo
+Home-page: https://github.com/sourav3365/DVC_DL_Tensorflow_demo
+Author: sourav3365
+Author-email: sourav3365@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# DVC - DL - TF - AIOPS demo
+
+## commands -
+
+### create a new env
+
+'''bash
+conda create --prefix ./env python=3.7 -y
+source activate ./env
+'''
+
+### init DVC
+
+'''bash
+git init
+dvc init
+'''
+
+### create some empty files
+
+'''bash
+mkdir -p src/utils config
+touch dvc.yaml requirement.txt params.yaml README.md
+'''
