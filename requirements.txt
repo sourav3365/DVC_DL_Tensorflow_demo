@@ -1,0 +1,8 @@
+dvc
+tensorflow
+pandas
+matplotlib
+numpy
+tqdm
+PyYAML
+boto3
