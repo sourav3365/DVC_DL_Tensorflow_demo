@@ -2,3 +2,9 @@ config/secrets.yaml
 env/
 ./env
 .vscode
+./outside_data.zip
+outside_data.zip
+/outside_data.zip
+./outside_data
+outside_data/
+outside_data
