@@ -6,5 +6,6 @@ numpy
 tqdm
 PyYAML
 boto3
+fsspec
 # shutil
 -e .
