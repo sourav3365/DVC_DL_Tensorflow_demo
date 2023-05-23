@@ -16,3 +16,6 @@ FileNotFoundError: [WinError 3] The system cannot find the path specified: '/out
 [2023-05-19 20:51:52,482: INFO: all_utils]: directory is created at data/cat
 [2023-05-19 20:51:52,645: INFO: stage_01_load_save]: stage one completed! all the data are saved in local >>>>>
 
+[2023-05-23 19:21:02,089: INFO: stage_01_load_save]: >>>>> stage one started
+[2023-05-23 19:21:21,423: INFO: stage_01_load_save]: stage one completed! all the data are saved in local >>>>>
+
