@@ -19,3 +19,65 @@ FileNotFoundError: [WinError 3] The system cannot find the path specified: '/out
 [2023-05-23 19:21:02,089: INFO: stage_01_load_save]: >>>>> stage one started
 [2023-05-23 19:21:21,423: INFO: stage_01_load_save]: stage one completed! all the data are saved in local >>>>>
 
+[2023-05-23 19:45:08,798: INFO: stage_02_prepare_base_model]: >>>>> stage two started
+[2023-05-23 19:45:08,801: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2023-05-23 19:45:08,803: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2023-05-23 19:45:08,803: INFO: all_utils]: directory is created at artifacts\base_model
+[2023-05-23 19:45:10,358: WARNING: saving_utils]: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2023-05-23 19:45:10,478: INFO: models]: VGG16 base model saved at: artifacts\base_model\VGG16_base_model.h5
+[2023-05-23 19:45:10,520: INFO: models]: custom model is compiled and ready to be trained
+[2023-05-23 19:45:10,570: INFO: stage_02_prepare_base_model]: full model summary: 
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 224, 224, 3)]     0         
+                                                                 
+ block1_conv1 (Conv2D)       (None, 224, 224, 64)      1792      
+                                                                 
+ block1_conv2 (Conv2D)       (None, 224, 224, 64)      36928     
+                                                                 
+ block1_pool (MaxPooling2D)  (None, 112, 112, 64)      0         
+                                                                 
+ block2_conv1 (Conv2D)       (None, 112, 112, 128)     73856     
+                                                                 
+ block2_conv2 (Conv2D)       (None, 112, 112, 128)     147584    
+                                                                 
+ block2_pool (MaxPooling2D)  (None, 56, 56, 128)       0         
+                                                                 
+ block3_conv1 (Conv2D)       (None, 56, 56, 256)       295168    
+                                                                 
+ block3_conv2 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_conv3 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_pool (MaxPooling2D)  (None, 28, 28, 256)       0         
+                                                                 
+ block4_conv1 (Conv2D)       (None, 28, 28, 512)       1180160   
+                                                                 
+ block4_conv2 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_conv3 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_pool (MaxPooling2D)  (None, 14, 14, 512)       0         
+                                                                 
+ block5_conv1 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv2 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv3 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_pool (MaxPooling2D)  (None, 7, 7, 512)         0         
+                                                                 
+ flatten (Flatten)           (None, 25088)             0         
+                                                                 
+ dense (Dense)               (None, 2)                 50178     
+                                                                 
+=================================================================
+Total params: 14,764,866
+Trainable params: 50,178
+Non-trainable params: 14,714,688
+_________________________________________________________________
+
+[2023-05-23 19:45:10,721: INFO: stage_02_prepare_base_model]: stage two completed! base model is created >>>>>
+
